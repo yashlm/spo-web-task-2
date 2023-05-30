@@ -26,7 +26,7 @@ p, h2{
 
 ul li, ul, .residents, .films, .inner{
   background-color: #CFBFF7;
-  font-size: 1.1em;
+  font-size: 1.0em;
 }
 
 .inner{
@@ -34,3 +34,4 @@ ul li, ul, .residents, .films, .inner{
   flex-direction: row;
   justify-content: space-around;
 }
+

@@ -64,17 +64,30 @@ function App() {
           <div className='inner'>
             <div className='residents'>
           <h2>Residents:</h2>
-          <ul>
+          <ul  classname='residentslist'>
             {residentDetails.map(resident => (
-              <li key={resident.name}>{resident.name}</li>
+              <li key={resident.name}>{resident.name}
+                <ul>
+                  <li>Height: {resident.height}cm</li>
+                  <li>Mass: {resident.mass}kg</li>
+                  <li>Hair Colour: {resident.hair_color}</li>
+              </ul>
+              </li>
             ))}
               </ul>
             </div>
             <div className='films'>
           <h2>Films:</h2>
-          <ul>
+          <ul  className='filmlist'>
             {filmDetails.map(film => (
-              <li key={film.title}>{film.title}</li>
+              <li key={film.title}>{film.title}
+                <ul>
+                  <li>Episode: {film.episode_id}</li>
+                  <li>Director: {film.director}</li>
+                  <li>Producer: {film.producer}</li>
+                  <li>Release Date: {film.release_date}</li>
+              </ul>
+              </li>
             ))}
               </ul>
               </div>
